@@ -1,5 +1,5 @@
 {
-  "name": "mongo-wrapper",
+  "name": "repository",
   "version": "1.0.0",
   "description": "a basic crud wrapper for mongo native",
   "engines": {
