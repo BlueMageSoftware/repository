@@ -1,0 +1,28 @@
+{
+  "name": "mongo-wrapper",
+  "version": "1.0.0",
+  "description": "a basic crud wrapper for mongo native",
+  "engines": {
+    "node" : ">=6.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlueMageSoftware/mongo-wrapper.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "2.4.0",
+    "eslint-config-airbnb": "6.1.0",
+    "eslint-plugin-react": "4.2.3"
+  },
+  "bugs": {
+    "url": "https://github.com/BlueMageSoftware/mongo-wrapper/issues"
+  },
+  "homepage": "https://github.com/BlueMageSoftware/mongo-wrapper#readme"
+}
