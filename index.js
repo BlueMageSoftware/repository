@@ -5,7 +5,7 @@ module.exports = function repository(db) {
         if (err) {
           return response(err);
         }
-        return response(err, !!result.nInserted);
+        return response(err, result.insertedId);
       });
     },
     update: (collection, query, update, response, opts = {}) => {
