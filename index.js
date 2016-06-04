@@ -3,13 +3,13 @@ module.exports = function repository(db) {
     save: (collection, data, response) => {
       db[collection].insertOne(data, response);
     },
-    update: (collection, query, update, opts = {}, response) => {
-      db[collection].update(query, update, opts, response);
+    update: (collection, query, update, response, opts = {}) => {
+      db[collection].update(query, { $set: update }, opts, response);
     },
-    find: (collection, query, projection = {}, response) => {
+    find: (collection, query, response, projection = {}) => {
       db[collection].find(query, projection, response);
     },
-    findOne: (collection, query, projection = {}, response) => {
+    findOne: (collection, query, response, projection = {}) => {
       db[collection].findOne(query, projection, response);
     }
   };
